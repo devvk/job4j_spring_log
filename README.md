@@ -2,20 +2,21 @@
 
 Примеры настройки логирования в Spring Boot приложении.
 
-## Logback
+## Logback + Lombok
 
-- Каталог logging: Logback + Lombok. Вывод логов в консоль.
-- Каталог logginglogbackxml: Logback + Lombok + XML. Вывод логов в файл.
-- Каталог logginglogbackxmldb: Logback + Lombok + XML. Вывод логов в БД.
-- Каталог logginglogbackxmldbmy: Logback + Lombok + XML. Вывод логов в БД + своя таблица.
-- Каталог logginglogbackproperties: Logback + Lombok + .properties.
+- Каталог logging: вывод логов в консоль.
+- Каталог logginglogbackxml: конфигурация в xml, вывод логов в файл.
+- Каталог logginglogbackxmldb: конфигурация в xml, вывод логов в БД.
+- Каталог logginglogbackxmldbmy: конфигурация в xml, вывод логов в БД + своя таблица.
+- Каталог logginglogbackproperties: конфигурация в .properties, вывод логов в файл.
 
 ## Log4j2
 
+- Каталог logginglog4jxml: конфигурация в xml, вывод логов в файл.
+
 - Каталог logginglog4j:  
 - Каталог logginglog4jpropperties: 
-- Каталог logginglog4jpropertiesdb:  
-- Каталог logginglog4jxml:
+- Каталог logginglog4jpropertiesdb:
 
 ## Пример контроллера
 
