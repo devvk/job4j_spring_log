@@ -12,11 +12,10 @@
 
 ## Log4j2
 
+- Каталог logginglog4j: вывод логов в консоль.
 - Каталог logginglog4jxml: конфигурация в xml, вывод логов в файл.
-
-- Каталог logginglog4j:  
-- Каталог logginglog4jpropperties: 
-- Каталог logginglog4jpropertiesdb:
+- Каталог logginglog4jpropertiesdb: конфигурация в .properties, вывод логов в БД.
+- Каталог logginglog4jpropperties: конфигурация в .properties, вывод логов в файл.
 
 ## Пример контроллера
 
