@@ -13,11 +13,11 @@ public class MyController {
     @RequestMapping("/Hello")
     public String hello() {
         log.info("Hello from Controller");
-        log.error("Some error occured");
-        log.warn ("Some warn occured");
-        log.info ("Some info occured");
-        log.debug("Some debug occured");
-        log.trace("Some trace occured");
+        log.error("Some error occurred");
+        log.warn ("Some warn occurred");
+        log.info ("Some info occurred");
+        log.debug("Some debug occurred");
+        log.trace("Some trace occurred");
         return "Hello from Controller";
     }
 }
