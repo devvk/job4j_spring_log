@@ -4,10 +4,21 @@
 
 ## Описание
 
-- Logback + Lombok: проект находится в каталоге logging.
-- 
+- Каталог logging: Logback + Lombok. Вывод логов в консоль.
+- Каталог logginglogbackxml: Logback + Lombok. Вывод логов в файл.
+
+- Каталог logginglog4j:  
+- Каталог logginglog4jpropperties: 
+- Каталог logginglog4jpropertiesdb:  
+- Каталог logginglog4jxml: 
+- Каталог logginglogbackproperties:
+- Каталог logginglogbackxmldb: 
+- Каталог logginglogbackxmldbmy: 
 
 ## Пример контроллера
+
+Аннотация @Slf4j из библиотеки lombok позволяет не выполнять явно в коде создание логгера. 
+Без этой аннотации пришлось добавить строку ` private static final Logger log = LoggerFactory.getLogger(MyController.class);`
 
 ```java
 @Slf4j
