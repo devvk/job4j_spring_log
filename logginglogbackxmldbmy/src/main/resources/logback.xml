@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- IMPORT PROPERTIES -->
+    <property resource="application.properties" />
+    <!-- MY DB APPENDER -->
+    <appender name="MyDBAppenderName"
+              class="ru.job4j.logging.log.MyDBAppender">
+        <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+            <url> ${spring.datasource.url} </url>
+            <user> ${spring.datasource.username} </user>
+            <password> ${spring.datasource.password} </password>
+            <driverClass> ${spring.datasource.driver-class-name} </driverClass>
+        </connectionSource>
+    </appender>
+    <!-- LOGGER -->
+    <logger name="ru.job4j.logging.controller" level="INFO">
+        <appender-ref ref="MyDBAppenderName"/>
+    </logger>
+</configuration>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <!-- CONSOLE APPENDER -->
+        <Console name="MyConsoleAppenderName"> </Console>
+        <!-- FILE APPENDER -->
+        <File name="MyFileAppenderName" fileName="logs/File.log">
+            <PatternLayout pattern="My File Appender: %d %p %c{2} %m %n" />
+        </File>
+        <!-- ROLLING FILE APPENDER -->
+        <RollingFile name = "MyRollingFileAppenderName"
+                     fileName = "logs/RollingFile.log"
+                     filePattern = "logs/$${date:MM-yyyy}/RollingFile_%d{dd.MM.yyyy}_%i.log">
+            <!-- PATTERN LAYOUT -->
+            <PatternLayout pattern="My Rolling File Appender: %d %p %c{2} %m %n"/>
+            <!-- ROLLOVER POLICY (on startup, daily and when the file reaches 10MB) -->
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- LOGGER -->
+        <Logger name="ru.job4j.logging.controller" level="info">
+            <AppenderRef ref="MyConsoleAppenderName" />
+            <AppenderRef ref="MyFileAppenderName" />
+            <AppenderRef ref="MyRollingFileAppenderName"/>
+        </Logger>
+        <!-- PREVENT DEFAULT LOGGER (since no appenders are defined) -->
+        <Root level="info"></Root>
+    </Loggers>
+</Configuration>
