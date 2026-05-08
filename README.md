@@ -6,13 +6,13 @@
 
 - Каталог logging: Logback + Lombok. Вывод логов в консоль.
 - Каталог logginglogbackxml: Logback + Lombok. Вывод логов в файл.
+- Каталог logginglogbackxmldb: Logback + Lombok. Вывод логов в БД
 
 - Каталог logginglog4j:  
 - Каталог logginglog4jpropperties: 
 - Каталог logginglog4jpropertiesdb:  
 - Каталог logginglog4jxml: 
 - Каталог logginglogbackproperties:
-- Каталог logginglogbackxmldb: 
 - Каталог logginglogbackxmldbmy: 
 
 ## Пример контроллера
